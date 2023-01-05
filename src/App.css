@@ -1,38 +1,169 @@
+.shadow1{
+  box-shadow: 0px 4px 6px rgba(58, 99, 209, 0.27);
+}
+.shadow2{
+    box-shadow: 0px 5px 4px rgba(58, 99, 209, 0.27);
+}
+
+.shadow{
+font-weight: bold;
+box-shadow: 1px 5px 5px rgba(241, 234, 239, 0.7);
+
+
+}
+
 .App {
-  text-align: center;
+  
+  padding: 12px;
+  background-color: gray;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  background-color: rgba(82, 90, 221, 1);
+  height: 650px;
+  width: 360px;
+  margin-left: 200px;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.top{
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  margin-right: 20px;
   }
+
+  .fire{
+    margin-top: 160px;
+    margin-left: 139px;
+  }
+
+  .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+  .button{
+    width: 156px;
+    height: 45px;
+    margin-left: 113px;
+    margin-top: 124px;
+    background: linear-gradient(90deg, #FF5D56 2.63%, #FF8883 119.17%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    border-color: #f5433d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .back{
+    width: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
+
+  .second{
+  background-color: #ffffff;
+  height: 650px;
+  width: 360px;
+  margin-left: 200px;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-bottom: 27px;
+  padding-top: 61px;
+  
+
+  }
+
+  .s-heading{
+    font-family: 'Montserrat', sans-serif;
+    
+
+  }
+  
+  .s-middle{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .s-m-text{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 195px;
+    columns: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 22px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+    position: absolute;
+  }
+
+.sb-first{
+  width: 340px;
+  height: 210px;
+  margin-top: 43px;
+  background: linear-gradient(90deg, #525ADD 2.97%, rgba(82, 90, 221, 0.72) 106.41%);
+  box-shadow: 0px 16px 40px rgba(58, 99, 209, 0.27);
+  border-radius: 27px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logintitle{
+  font-weight: 300;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 140px;
+
+}
+
+.loginChart{
+  margin-left: 20px;
+  margin-top: 150px;
+  width: 300px;
+  height: 310px;
+  box-shadow: 0px 16px 40px rgba(58, 99, 209, 0.27);
+  border-radius: 27px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 20px;
+  color: yellow;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.signupChart{
+  color: yellow;
+  background: linear-gradient(90deg, #525ADD 2.97%, rgba(82, 90, 221, 0.72) 106.41%);
+  margin-left: 20px;
+  margin-top: 120px;
+  width: 300px;
+  height: 420px;
+  border-radius: 27px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.depth{
+  filter: blur(0.4px);
+  
+
 }

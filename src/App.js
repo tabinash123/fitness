@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import LoginOrSignup from './LoginOrSignup';
+import Main from './Main';
+import Second from './Second';
+import Signup from './Signup';
+import { Route, Routes, BrowserRouter } from 'react-router-dom'
+import { useContext, useEffect } from 'react';
+import { FitnessContext } from './Context';
 
 function App() {
+  
+  const { detail, getItem } = useContext(FitnessContext);
+  useEffect(() => {
+    getItem();
+  }, [])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/Login" element={<LoginOrSignup />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="Second" element={<Second />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
